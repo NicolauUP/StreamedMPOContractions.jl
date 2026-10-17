@@ -1,0 +1,4 @@
+Manifest.toml
+*.cov
+*.mem
+.DS_Store

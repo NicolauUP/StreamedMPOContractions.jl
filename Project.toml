@@ -1,0 +1,29 @@
+name = "StreamedMPOContractions"
+uuid = "daa74517-275e-4f6a-ae20-5940ec8d3721"
+version = "0.1.0"
+
+[deps]
+ITensorMPS = "0d1a4710-d33b-49a5-8f18-73bdf49b47e2"
+ITensors = "9136182c-28ba-11e9-034c-db9fb085ebd5"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+NDTensors = "23ae76d9-e61a-49c4-8f12-3f1a16adf9cf"
+
+[weakdeps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
+[extensions]
+StreamedMPOContractionsCUDAExt = "CUDA"
+
+[compat]
+CUDA = "6.2"
+ITensorMPS = "0.3.45"
+ITensors = "0.9.30"
+NDTensors = "0.4.28"
+julia = "1.12"
+
+[extras]
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Random", "Test"]
